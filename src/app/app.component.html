@@ -1,1 +1,5 @@
-<app-child-app></app-child-app>
+<app-child-app [view]="demoTemplate" ></app-child-app>
+
+<ng-template #demoTemplate>
+    <p>{{'asd'}}</p>
+</ng-template>

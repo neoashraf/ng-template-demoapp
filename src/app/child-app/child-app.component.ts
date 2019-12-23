@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, TemplateRef } from '@angular/core';
 
 @Component({
   selector: 'app-child-app',
@@ -9,7 +9,9 @@ export class ChildAppComponent implements OnInit {
 
   constructor() { }
 
+  @Input() view: TemplateRef<any>;
   ngOnInit() {
+    console.log("I am child", this.view);
   }
 
 }
